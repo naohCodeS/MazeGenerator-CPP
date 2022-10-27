@@ -50,7 +50,7 @@ Maze generateMaze(int size_x, int size_y){
     mt19937 gen(seed());
     startCord.insert({1,1});//スタート座標候補を初期化
 
-    while(startCord.size() != 0){
+    while(startCord.size() != 0){  
         //スタート位置の決定
         auto ite = startCord.begin();
         uniform_int_distribution<> startCordRand(0,startCord.size()-1);
